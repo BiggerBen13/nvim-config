@@ -4,6 +4,6 @@ return {
         require("user.plugins.config.lspconfig").init()
     end,
     dependencies = {
-        { "hrsh7th/cmp-nvim-lsp" },
+        -- { "hrsh7th/cmp-nvim-lsp" },
     }
 }

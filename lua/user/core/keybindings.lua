@@ -15,3 +15,4 @@ map("n", "]d", vim.diagnostic.goto_next, {desc = "goto next diagnostic"})
 --     local oil = require("oil")
 --     map("n", "<leader>of", oil.open_float(), {desc = "open oil floating window" })
 -- end
+

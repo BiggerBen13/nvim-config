@@ -3,8 +3,7 @@ return {
     "kawre/leetcode.nvim",
     build = ":TSUpdate html",
     dependencies = {
-        "nvim-telescope/telescope.nvim",
-        "nvim-lua/plenary.nvim", -- required by telescope
+        "ibhagwan/fzf-lua",
         "MunifTanjim/nui.nvim",
 
         -- optional

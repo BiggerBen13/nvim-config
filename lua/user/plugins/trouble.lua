@@ -1,4 +1,7 @@
 return {
     "folke/trouble.nvim",
-    event = "LspAttach"
+    -- event = "LspAttach",
+    cmd = "Trouble",
+    -- opt = {}
+    -- config = function() require "trouble" end
 }

@@ -12,12 +12,12 @@ opt.conceallevel = 1
 opt.formatoptions = {
     ["1"] = false,
     ["2"] = false, -- Use indent from 2nd line of a paragraph
-    q = true, -- continue comments with gq"
-    c = true, -- Auto-wrap comments using textwidth
-    r = false, -- Continue comments when pressing Enter
-    n = false, -- Recognize numbered lists
-    t = false, -- autowrap lines using text width value
-    j = true, -- remove a comment leader when joining lines.
+    q = true,      -- continue comments with gq"
+    c = true,      -- Auto-wrap comments using textwidth
+    r = false,     -- Continue comments when pressing Enter
+    n = false,     -- Recognize numbered lists
+    t = false,     -- autowrap lines using text width value
+    j = true,      -- remove a comment leader when joining lines.
     o = false,
     -- Only break if the line was not longer than 'textwidth' when the insert
     -- started and only at a white character that has been entered during the
@@ -26,6 +26,25 @@ opt.formatoptions = {
     v = true,
 }
 
+LSP_FT = {
+        "nix",
+        "typst",
+        "gdscript",
+        "markdown",
+        "lua",
+        "rust",
+        "c",
+        "cpp",
+        "glsl",
+        "zig",
+        "wgsl",
+        "html",
+        "css",
+        "nu",
+        "toml",
+}
+
+-- neovide options
 if vim.g.neovide then
     -- Neovide Mac-OS Compatability
     vim.g.neovide_input_macos_alt_is_meta = 'both'
@@ -52,3 +71,4 @@ if vim.g.neovide then
     --     vim.cmd("NeovideFocus")
     -- end)
 end
+
