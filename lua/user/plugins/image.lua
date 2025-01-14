@@ -1,5 +1,8 @@
 return {
     "3rd/image.nvim",
-    config = function()
-    end
+    ft = { "markdown" },
+    opts = {
+        max_width = 60,
+        max_height = 60,
+    },
 }

@@ -7,7 +7,14 @@ local servers = {
     -- rust_analyzer = require "user.plugins.config.lsps.rust_analyzer",
     lua_ls = {},
     clangd = {},
-    zls = {},
+    zls = {
+        cmd = { "/Users/biggerben/home-bin/zls" },
+        settings = {
+            zls = {
+                zig_exe_path = "/Users/biggerben/home-bin/zig"
+            }
+        }
+    },
     glsl_analyzer = {},
     -- markdown_oxide = {},
     wgsl_analyzer = {},

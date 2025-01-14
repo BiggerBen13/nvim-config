@@ -3,7 +3,7 @@ local map = vim.keymap.set
 
 fzf.setup{
     files = {
-        fd_opts = [[--color=never --hidden --follow --exclude .git --exclude .obsidian]]
+        fd_opts = [[--color=never --hidden --follow --exclude .git --exclude .obsidian --type f]]
     }
 }
 
