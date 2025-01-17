@@ -14,10 +14,25 @@ return {
     sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
         providers = {
+            -- Lazydev for neovim plugin development
             lazydev = {
                 name = "LazyDev",
                 module = "lazydev.integrations.blink",
                 score_offset = 100,
+            },
+
+            -- Obsidian sources
+            obsidian = {
+                name = "obsidian",
+                module = "blink.compat.source",
+            },
+            obsidian_new = {
+                name = "obsidian_new",
+                module = "blink.compat.source",
+            },
+            obsidian_tags = {
+                name = "obsidian_tags",
+                module = "blink.compat.source",
             },
         }
     },

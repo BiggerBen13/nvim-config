@@ -22,7 +22,7 @@ require("obsidian").setup {
                 suffix = suffix .. string.char(math.random(65, 90))
             end
         end
-        return tostring(os.date("%Y%m%d%H%M", os.time())) .. "-" .. suffix
+        return suffix
     end,
     disable_frontmatter = true,
     note_frontmatter_func = function(note)
@@ -37,3 +37,23 @@ require("obsidian").setup {
         return out
     end,
 }
+
+do
+    local map = vim.keymap.set
+
+    map("n", "<leader>ff", "<cmd>ObsidianSearch<cr>", {desc = "Search Obsidian notes"})
+end
+
+
+-- Create new autocmmands to sync obsidian application with neovim
+do
+    vim.api.nvim_create_autocmd("BufWinEnter", {
+        pattern = "/Volumes/NOTES/**.md",
+        command = "ObsidianOpen",
+    })
+
+    vim.api.nvim_create_autocmd("InsertLeave", {
+        pattern = "/Volumes/NOTES/**.md",
+        command = "w",
+    })
+end

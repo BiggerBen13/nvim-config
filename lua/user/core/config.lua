@@ -60,7 +60,7 @@ if vim.g.neovide then
     vim.g.neovide_refresh_rate_idle = 5
 
     -- Neovide Font Settings
-    vim.o.guifont = "Iosevka Nerd Font Mono:20"
+    vim.o.guifont = "Iosevka Nerd Font Mono:22"
 
     -- Neovide Cursor Settings
     vim.g.neovide_cursor_vfx_mode = "railgun"

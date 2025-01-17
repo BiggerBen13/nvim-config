@@ -3,5 +3,5 @@ return {
     -- event = "LspAttach",
     cmd = "Trouble",
     -- opt = {},
-    config = function() require("trouble").setup() end
+    config = function() require"user.plugins.config.trouble" end
 }
