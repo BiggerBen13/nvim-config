@@ -26,7 +26,7 @@ Directory layout
             │   ├── snacks
             │   │   ├── dashboard.lua
             │   │   └── snacks.lua
-            │   ├── treesitter.lua
+            │   └── treesitter.lua
             ├── conform.lua
             ├── friendlysnippets.lua
             ├── fzf-lua.lua
@@ -129,13 +129,14 @@ For plugins that require more than a few options I prefer configure them in an e
 
 - [oil.nvim](https://github.com/stevearc/oil.nvim) allows you to edit your filesystem as if it were a neovim-buffer
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua) a fuzzy finder using fzf as a backend, I used to use [telescope](https://github.com/nvim-telescope/telescope.nvim), but find fzf to be more modular
-- [nvim-surround](https://github.com/kylechui/nvim-surround) adds helix like surround capabilities
 - [conform.nvim](https://github.com/stevearc/conform.nvim) allows you to configure formatters
 - [rustaceanvim](https://github.com/mrcjkb/rustaceanvim) more functionality from rust analyzer
 - [trouble.nvim](https://github.com/folke/trouble.nvim) lsp info in a popup window (I only use diagnostics usually)
 - [snacks.nvim](https://github.com/folke/snacks.nvim) Lot's of snacks, (I use it for dashboard and notify, and have everything else disabled, there's a lot of functionality though)
-- [nvim-autopairs](https://github.com/windwp/nvim-autopairs) autopairs you brackets, parentheses, or whatever you like
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip) snippets for neovim
+- [mini](https://github.com/echasnovski/mini.nvim) 40 lua modules to use in your neovim config
+    - **mini.surround**: Helix like surround capabilities 
+    - **mini.pairs**: auto pairs parentheses, brackets and whatever you want it to
 
 
 

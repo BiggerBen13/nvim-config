@@ -3,7 +3,5 @@ return {
     config = function()
         require("user.plugins.config.lspconfig").init()
     end,
-    dependencies = {
-        -- { "hrsh7th/cmp-nvim-lsp" },
-    }
+    ft = LSP_FT,
 }
