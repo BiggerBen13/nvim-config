@@ -41,19 +41,19 @@ require("obsidian").setup {
 do
     local map = vim.keymap.set
 
-    map("n", "<leader>ff", "<cmd>ObsidianSearch<cr>", {desc = "Search Obsidian notes"})
+    map("n", "<leader>ff", "<cmd>ObsidianSearch<cr>", { desc = "Search Obsidian notes" })
 end
 
 
 -- Create new autocmmands to sync obsidian application with neovim
 do
-    vim.api.nvim_create_autocmd("BufWinEnter", {
-        pattern = "/Volumes/NOTES/**.md",
+    vim.api.nvim_create_autocmd("BufAdd", {
+        pattern = OBSIDIAN_VAULTS,
         command = "ObsidianOpen",
     })
 
     vim.api.nvim_create_autocmd("InsertLeave", {
-        pattern = "/Volumes/NOTES/**.md",
+        pattern = OBSIDIAN_VAULTS,
         command = "w",
     })
 end

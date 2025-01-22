@@ -11,12 +11,14 @@ configs.setup({
         "zig",
         "markdown",
         "markdown_inline",
+        "haskell",
+        "typst",
         -- "norg",
     },
     sync_install = true,
     highlight = {
         enable = true,
-        additional_vim_regex_highlighting = true
+        additional_vim_regex_highlighting = true,
     },
     indent = { enable = true },
 })

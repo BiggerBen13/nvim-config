@@ -4,6 +4,7 @@ return {
     opts = require "user.plugins.config.blink",
     event = "InsertEnter",
     dependencies = {
-        "saghen/blink.compat"
+        "saghen/blink.compat",
+        -- "L3MON4D3/LuaSnip",
     },
 }

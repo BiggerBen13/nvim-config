@@ -22,6 +22,7 @@ local servers = {
     nil_ls = {},
     nushell = {},
     taplo = {},
+    hls = {},
 }
 
 local M = {}
