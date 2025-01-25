@@ -1,10 +1,7 @@
 local lspconfig = require("lspconfig")
 
 local servers = {
-    -- cssls = {},
-    -- html = {},
-    -- htmx = {},
-    -- rust_analyzer = require "user.plugins.config.lsps.rust_analyzer",
+    rust_analyzer = {};
     lua_ls = {},
     clangd = {},
     zls = {
@@ -16,7 +13,6 @@ local servers = {
         }
     },
     glsl_analyzer = {},
-    -- markdown_oxide = {},
     wgsl_analyzer = {},
     tinymist = require "user.plugins.config.lsps.tinymist",
     nil_ls = {},

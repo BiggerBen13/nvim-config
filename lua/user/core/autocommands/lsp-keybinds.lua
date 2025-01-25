@@ -64,12 +64,6 @@ return function(args)
 
     map("n", "<leader>cf", function() require "conform".format { async = false } end, { desc = "LSP format" })
 
-
-    -- vim.api.nvim_buf_set_option(bufnr, "formatexpr", "v:lua.vim.lsp.formatexpr()")
-    vim.api.nvim_set_option_value("formatexpr", nil, { buf = bufnr })
-    vim.api.nvim_set_option_value("omnifunc", "v:lua.vim.lsp.omnifunc", { buf = bufnr })
-    vim.api.nvim_set_option_value("tagfunc", "v:lua.vim.lsp.tagfunc", { buf = bufnr })
-
     if not client.supports_method "textDocument/semanticTokens" then
         client.server_capabilities.semanticTokensProvider = nil
     end

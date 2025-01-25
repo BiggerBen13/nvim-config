@@ -13,7 +13,7 @@ configs.setup({
         "markdown_inline",
         "haskell",
         "typst",
-        -- "norg",
+        "norg",
     },
     sync_install = true,
     highlight = {

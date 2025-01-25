@@ -22,16 +22,8 @@ return {
             },
 
             -- Obsidian sources
-            obsidian = {
-                name = "obsidian",
-                module = "blink.compat.source",
-            },
-            obsidian_new = {
-                name = "obsidian_new",
-                module = "blink.compat.source",
-            },
-            obsidian_tags = {
-                name = "obsidian_tags",
+            neorg = {
+                name = "neorg",
                 module = "blink.compat.source",
             },
         }

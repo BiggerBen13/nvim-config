@@ -7,6 +7,7 @@ opt.title = true
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.conceallevel = 1
+opt.wrap = false
 
 
 -- opt.formatoptions = {
