@@ -22,13 +22,13 @@ _______ _______ _______ _______
             -- { icon = " ", key = "s", desc = "Restore Session", section = "session" },
             { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
             { icon = " ", key = "q", desc = "Quit", action = ":qa" },
-            { icon = "󱓩 ", key = "b", desc = "Notes", action = function() require("zk.commands").get("ZkNotes")() end, }
+            -- { icon = "󱓩 ", key = "b", desc = "Notes", action = function() require("zk.commands").get("ZkNotes")() end, }
         },
 
     },
     sections = {
         { section = "header", padding = 0, },
-        { section = "keys",   padding = 0, },
+        -- { section = "keys",   padding = 0, },
         -- { section = "startup", padding = 4},
         {
             text = { { "Writing horrible code since 2007", hl = "header" }, },

@@ -19,6 +19,7 @@ local servers = {
     nushell = {},
     taplo = {},
     hls = {},
+    markdown_oxide = {},
 }
 
 local M = {}
