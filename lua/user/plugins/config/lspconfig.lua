@@ -20,6 +20,7 @@ local servers = {
     taplo = {},
     hls = {},
     markdown_oxide = {},
+    cssls = {},
 }
 
 local M = {}

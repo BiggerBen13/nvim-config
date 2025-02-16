@@ -62,11 +62,11 @@ return function(args)
         map("n", "<leader>d", fzf.lsp_definitions, opts("LSP show all definitions"))
     end
 
-    map("n", "<leader>cf", function() require "conform".format { async = false } end, { desc = "LSP format" })
+    map("n", "<leader>cf", function() vim.lsp.buf.format { async = false } end, { desc = "LSP format" })
 
-    if not client.supports_method "textDocument/semanticTokens" then
-        client.server_capabilities.semanticTokensProvider = nil
-    end
+    -- if not client.supports_method "textDocument/semanticTokens" then
+    --     client.server_capabilities.semanticTokensProvider = nil
+    -- end
 
     if client.supports_method "textDocument/inlayHint" then
         vim.lsp.inlay_hint.enable(false)

@@ -10,6 +10,8 @@ map("n", "<leader>gn", "<CMD>bn<CR>", { desc = "goto next buffer" })
 map("n", "[d", vim.diagnostic.goto_prev, {desc = "goto previous diagnostic"})
 map("n", "]d", vim.diagnostic.goto_next, {desc = "goto next diagnostic"})
 
+map("n", "<leader>.", vim.cmd.Ex, {desc = "open Explore"})
+
 -- local oil_mappings = {}
 -- function oil_mappings:setup()
 --     local oil = require("oil")

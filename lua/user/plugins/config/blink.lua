@@ -1,5 +1,3 @@
----@module "blink.cmp"
----@type blink.cmp.Config
 return {
     keymap = { preset = 'default' },
     appearance = {
@@ -11,21 +9,18 @@ return {
         -- Adjusts spacing to ensure icons are aligned
         nerd_font_variant = 'mono'
     },
+    cmdline = {
+        enabled = false,
+    },
     sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
+        default = { 'lsp', 'path' },
         providers = {
             -- Lazydev for neovim plugin development
-            lazydev = {
-                name = "LazyDev",
-                module = "lazydev.integrations.blink",
-                score_offset = 100,
-            },
-
-            -- Obsidian sources
-            neorg = {
-                name = "neorg",
-                module = "blink.compat.source",
-            },
+            -- lazydev = {
+            --     name = "LazyDev",
+            --     module = "lazydev.integrations.blink",
+            --     score_offset = 100,
+            -- },
         }
     },
 }
