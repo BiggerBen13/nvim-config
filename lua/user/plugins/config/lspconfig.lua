@@ -1,11 +1,12 @@
 local lspconfig = require("lspconfig")
 
 local servers = {
-    rust_analyzer = {};
+    rust_analyzer = {},
     lua_ls = {},
     clangd = {},
     zls = {
         cmd = { "/Users/biggerben/home-bin/zls" },
+        root_dir = vim.fn.getcwd(),
         settings = {
             zls = {
                 zig_exe_path = "/Users/biggerben/home-bin/zig"
