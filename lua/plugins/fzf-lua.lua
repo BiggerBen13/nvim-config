@@ -7,5 +7,5 @@ return {
         { "<leader>fg" },
         { "<leader>fp" },
     },
-    config = function() require "user.plugins.config.fzf-lua" end
+    config = function() require "plugins.config.fzf-lua" end
 }

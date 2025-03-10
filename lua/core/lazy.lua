@@ -17,6 +17,6 @@ local opts = {
     }
 }
 
-local spec = { { import = "user.plugins" } }
+local spec = { { import = "plugins" } }
 
 require("lazy").setup(spec, opts)

@@ -1,8 +1,6 @@
 {
-  "blink.cmp": { "branch": "main", "commit": "cc2f10e9d8b6420324d4743a4d9a428de427e2cf" },
   "fzf-lua": { "branch": "main", "commit": "f8ccd73a7a3a0c9adae935441f85e83d5a989efd" },
   "gruvbox-baby": { "branch": "main", "commit": "bd52e62d8134647090108189e69c8b3cd18bdbbf" },
   "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
-  "nvim-lspconfig": { "branch": "master", "commit": "7af2c37192deae28d1305ae9e68544f7fb5408e1" },
   "nvim-treesitter": { "branch": "master", "commit": "b08ae25c473b0c63f5ef99f04b03fe66dfbd8f8d" }
 }

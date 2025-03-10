@@ -1,0 +1,5 @@
+require("core.config")
+require("core.keybindings")
+require("core.autocommands")
+require("core.lsp")
+require("core.lazy")

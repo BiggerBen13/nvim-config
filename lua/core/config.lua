@@ -9,23 +9,22 @@ opt.shiftwidth = 4
 opt.conceallevel = 1
 opt.wrap = false
 
-
--- opt.formatoptions = {
---     ["1"] = false,
---     ["2"] = false, -- Use indent from 2nd line of a paragraph
---     q = true,      -- continue comments with gq"
---     c = true,      -- Auto-wrap comments using textwidth
---     r = false,     -- Continue comments when pressing Enter
---     n = false,     -- Recognize numbered lists
---     t = false,     -- autowrap lines using text width value
---     j = true,      -- remove a comment leader when joining lines.
---     o = false,
---     -- Only break if the line was not longer than 'textwidth' when the insert
---     -- started and only at a white character that has been entered during the
---     -- current insert command.
---     l = true,
---     v = true,
--- }
+opt.formatoptions = {
+    ["1"] = false,
+    ["2"] = false, -- Use indent from 2nd line of a paragraph
+    q = true,      -- continue comments with gq"
+    c = true,      -- Auto-wrap comments using textwidth
+    r = false,     -- Continue comments when pressing Enter
+    n = false,     -- Recognize numbered lists
+    t = false,     -- autowrap lines using text width value
+    j = true,      -- remove a comment leader when joining lines.
+    o = false,
+    -- Only break if the line was not longer than 'textwidth' when the insert
+    -- started and only at a white character that has been entered during the
+    -- current insert command.
+    l = true,
+    v = true,
+}
 
 LSP_FT = {
     "haskell",
@@ -45,6 +44,22 @@ LSP_FT = {
     "nu",
     "toml",
 }
+
+---@type vim.diagnostic.Opts
+local diagnostic_opts = {
+    underline = true,
+    signs = {
+        text = {
+            [vim.diagnostic.severity.ERROR] = " ",
+            [vim.diagnostic.severity.WARN] = " ",
+            [vim.diagnostic.severity.HINT] = " ",
+            [vim.diagnostic.severity.INFO] = " "
+        },
+    },
+    virtual_lines = false,
+    virtual_text = true,
+}
+vim.diagnostic.config(diagnostic_opts)
 
 -- neovide options
 if vim.g.neovide then

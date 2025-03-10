@@ -15,7 +15,7 @@ local servers = {
     },
     glsl_analyzer = {},
     wgsl_analyzer = {},
-    tinymist = require "user.plugins.config.lsps.tinymist",
+    tinymist = require "plugins.config.lsps.tinymist",
     nil_ls = {},
     nushell = {},
     taplo = {},
