@@ -1,3 +1,18 @@
+local server = {
+    "jsonls",
+    "lua_ls",
+    "nixd",
+    "clangd",
+    "zls",
+    "nushell",
+    "rust_analyzer",
+    "zk",
+    "html",
+    "css_variables",
+    "cssls",
+    "somesass_ls"
+}
+
 local function on_attach(args)
     local client = vim.lsp.get_client_by_id(args.data.client_id)
 
@@ -18,7 +33,7 @@ local function on_attach(args)
     --- Toggle Virtual lines
 
     if client:supports_method "textDocument/completion" then
-        vim.bo.completeopt = "noselect,menu"
+        vim.bo.completeopt = "menu,menuone,noselect,fuzzy"
         vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
     end
 
@@ -33,16 +48,13 @@ local function on_attach(args)
     if client:supports_method "workspace/workspaceSymbols" then
         map("n", "grO", fzf.lsp_document_symbols, opt("List document symbols"))
     end
+
+    if client:supports_method "textDocument/inlayHint" then
+        map("n", "griH", function()
+            vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+        end, opt("Toggle inlay hints"))
+    end
 end
-
-
-local server = {
-    "vsc-jsonls",
-    "luals",
-    "clangd",
-    "nushell",
-    "zls",
-}
 
 local function init()
     vim.api.nvim_create_autocmd("LspAttach", {

@@ -1,6 +1,9 @@
 {
-  "fzf-lua": { "branch": "main", "commit": "f8ccd73a7a3a0c9adae935441f85e83d5a989efd" },
-  "gruvbox-baby": { "branch": "main", "commit": "bd52e62d8134647090108189e69c8b3cd18bdbbf" },
-  "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
-  "nvim-treesitter": { "branch": "master", "commit": "b08ae25c473b0c63f5ef99f04b03fe66dfbd8f8d" }
+  "fzf-lua": { "branch": "main", "commit": "8c8845ca6d05bc768b7ce27ebe3682ddf7e6a996" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "markview.nvim": { "branch": "main", "commit": "1edad11ca4a1fddf171c07a1a3d81e24cef08410" },
+  "nvim-lspconfig": { "branch": "master", "commit": "03bc581e05e81d33808b42b2d7e76d70adb3b595" },
+  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
+  "oxocarbon.nvim": { "branch": "main", "commit": "acdfdd5d319c36170b5ad2a120283bec2f450081" },
+  "zk-nvim": { "branch": "main", "commit": "08f3591d55cc73828a99019ef6545b939a88cc13" }
 }

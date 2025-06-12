@@ -9,6 +9,8 @@ opt.shiftwidth = 4
 opt.conceallevel = 1
 opt.wrap = false
 
+vim.g.netrw_bufsettings = "noma nomod nonu nobl nowrap ro rnu"
+
 opt.formatoptions = {
     ["1"] = false,
     ["2"] = false, -- Use indent from 2nd line of a paragraph
@@ -31,7 +33,7 @@ LSP_FT = {
     "nix",
     "typst",
     -- "gdscript",
-    -- "markdown",
+    "markdown",
     "lua",
     "rust",
     "c",
